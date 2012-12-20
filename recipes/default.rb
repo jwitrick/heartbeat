@@ -19,7 +19,7 @@
 
 case node['platform']
 when "centos", "redhat"
-    package_list = ['heartbeat', 'heartbeat-devel']
+    package_list = ['heartbeat']
 when "ubuntu", "debian"
     package_list = ['heartbeat', 'heartbeat-dev']
 end
@@ -37,4 +37,3 @@ service "heartbeat" do
   action :enable
 end
 
-  
